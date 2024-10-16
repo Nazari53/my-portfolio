@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio page </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"> </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo-container">
+          <div class="profile_name">
+              <h1>Khoda Dad Nazari</h1>
+          </div>
+          <div class="ContactInfo">
+              <h3><img src="./phone.png" style="height: 20px; width: 20px;"> phone : 917842402945</h3> 
+              <h3><img src="./email.png" style="width: 20px ; height: 20px;"> email : khodadadnazari1395@gmail.com</h3>
+              </div>
+      </div>
+  
+      <div class="topdiv">
+        
+          <a class="top_menue" href="#about" data-after="About-Me">About-Me</a>
+          <a class="top_menue" href="#skills" data-after="skills">Skills</a>
+          <a class="top_menue" href="#projects" data-after="projects">Projects</a>
+          <a class="top_menue" href="#recommendations" data-after="Recommendations">Recommendations</a>
+       
+        </div>
+  </nav>
+  
+   <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./ss1.JPG " style="height: 500px; width: 400px;" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Hi, I am Khoda Dad Nazari! <img src="./palm-of-hand.png" width="60px"/> 
+        </h2>
+        <p> I am a full stack developer with 2 years of experience in both application and presentation layers.<br>
+          I have worked on applications and microservices deployed on IBM Cloud. <br>
+          I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.<br>
+          I am an open source contributor and have contributed to many open source projects.</p>
+        <a href="#" class="cta">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- End About Section -->
+    <!-- Skills -->
+<section id="skills" class="container">
+      <h2>Skills</h2>
+        <div style="clear:both;"></div>
+        <div class=" All_Skill">
+            <div class="skill">
+                <img src="./html.png">
+                <h3>HTML</h3>
+                <p> three years of experience in HTML and CSS</p>
+            </div>
+            <div class="skill">
+                <img src="./javascript.png" >
+                <h3>JavaScript</h3>
+                <p> two years of experience in JavaScript</p>
+            </div>
+           <div class="skill">
+            <img src="./th.png" >
+            <h3>UI UX design using Figma </h3>
+            <p>three years of experience in UI UX design using Figma</p>
+
+           </div>
+
+        </div>
+
+   </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+            <h2>
+              Projects
+            </h2>
+            <div style="clear:both;"></div>
+            <div class="All_Projects" >
+                <div class="project1">
+                    <img src="./h1.png">
+                    <h3>calculator using HTML, CSS and JavaScript</h3>
+                    <p> I have created a calculator using HTML, CSS and JavaScript. in this project I have used HTML, CSS and JavaScript, this is my first project.<br>this calculator will calculate simple and complex calculations .   </p>
+            </div>
+            <div class="project2">
+                <img src="./js.png">
+                <h3>To do list App</h3>
+                <p> I have created a To do list App using HTML, CSS and JavaScript. in this project i focused on the javascrip syntax. </p>
+            </div>
+            <div class="project3">
+                <img src="./b web.png">
+                <h3>complete E- commerce website </h3>
+                <p> I have created a complete E- commerce website using HTML, CSS and JavaScript.  this is a complete dynamic website and it is responsive.</p>
+            </div>
+
+            </div>
+    </section>
+    <div style="clear:both;"></div>
+    <!-- Recommendations -->
+    <section id="recommendations">
+        <h2 style="color: blue;">Recommendations</h2>
+        <div style="clear:both;"></div>
+        <div class="all_recommendations" id="all_recommendations">
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Khoda Dad Nazari is a very quick learner and quickly grasps key concepts of Web development. 
+            He got a great attitude & she is an excellent team player. 
+            He has a curious mind and asks the right question. 
+            He takes initiative within a team and has potentials to lead the team.
+            <span>&#8221;</span>
+          </div>
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Working with Nazari has been an awesome experience. 
+            He is highly knowledgable and always goes the extra step to make sure everything is right. 
+            For any future projects that need his expertise I would definitely want to work with his again.
+            <span>&#8221;</span>
+          </div>
+          <div class="recommendation">
+            <span>&#8220;</span>
+            I had worked along with Khoda Dad Nazari during the initial phase of our venture which needed Web development. 
+            He is a committed resource who has in depth knowledge about the domain. 
+            He will be an asset for any organisation! 
+            <span>&#8221;</span>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Recommendation Form -->
+    <section id="contact">
+        <div class="flex_center">
+          <fieldset style="align-items:flex-start;">
+            <legend class="introduction" style=" font-size: large; font-weight: bolder;">Leave a Recommendation</legend>          
+            <input type="text" placeholder="Name (Optional)"> <br/>
+            <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+            <div class="flex_center">
+              <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+            </div>
+          </fieldset>
+        </div>
+      </section>
+  
+      <div class="iconbutton">
+        <a href="#about">
+        <img src="./home.png" alt="">
+        </a>
+      </div>
+  
+      <div class="popup flex_center" id="popup" style="visibility:hidden; position:fixed; bottom:10px; right:10px; background-color:lightgreen; padding:10px; border-radius:5px; display:flex; align-items:center; justify-content:center; flex-direction:column;">
+        <img src="./thank.png" alt="checkmark"/>
+        <h3>Thanks for your recommendation!</h3>
+        <button onclick="showPopup(false)">Ok</button>
+    </div>
+    
+
+
+
+    
+</body>
+</html>
